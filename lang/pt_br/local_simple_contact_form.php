@@ -28,6 +28,8 @@ $string['enable_subject'] = 'Habilitar assunto';
 $string['subject_list'] = 'Lista de assuntos';
 $string['enable_subject_description'] = 'Habilita a seleção de assunto';
 $string['subject_list_description'] = 'Você deve inserir um assunto por linha';
+$string['custom_html'] = 'Custom HTML';
+$string['custom_html_description'] = 'Adicione um HTML personalizado no final do formulário';
 
 // Form language
 $string['contact'] = 'Formulário de Contato';

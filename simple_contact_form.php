@@ -79,6 +79,10 @@ class simple_contact_form extends moodleform {
         $mform->addElement('textarea', 'f_message', get_string('message', 'local_simple_contact_form'), $attributes);
         $mform->addRule('f_message', get_string('requiredmessage', 'local_simple_contact_form'), 'required', null, 'client');
 
+        if (!empty($CFG->custom_html)) {
+            $mform->addElement('html', $CFG->custom_html);
+        }
+
         $this->add_action_buttons(true, get_string('send', 'local_simple_contact_form'));
     }
 

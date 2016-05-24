@@ -28,6 +28,8 @@ $string['enable_subject'] = 'Enable Subject';
 $string['subject_list'] = 'Subject list';
 $string['enable_subject_description'] = 'Enable selection of subject';
 $string['subject_list_description'] = 'You must input a subject per row';
+$string['custom_html'] = 'Custom HTML';
+$string['custom_html_description'] = 'Add Custom HTML in end of form';
 
 // Form fields language
 $string['contact'] = 'Contact Form';
