@@ -32,6 +32,8 @@ class simple_contact_form extends moodleform {
             $mform->addElement('text', 'f_email', get_string('email', 'local_simple_contact_form'), $attributes);
             $mform->addRule('f_email', get_string('requiredemail', 'local_simple_contact_form'), 'required', null, 'client');
         }
+        $mform->setType('f_name', PARAM_TEXT);
+        $mform->setType('f_email', PARAM_TEXT);
 
         if (!empty($CFG->enable_city)) {
             $attributes = array('size' => '40');

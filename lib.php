@@ -8,8 +8,9 @@
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 function mountSelect($name, $label, $no_option, $elements) {
-    
-    $select = HTML_QuickForm::createElement('select', $name, $label);
+
+    $HTMLQuickForm = new HTML_QuickForm();
+    $select = $HTMLQuickForm->createElement('select', $name, $label);
     $select->addOption($no_option, null, array('disabled' => 'disabled'));
     $selected = '';
     foreach ($elements as $name) {
